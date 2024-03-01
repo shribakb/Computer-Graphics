@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectangle Drawing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div id="canvas-container">
+      <canvas id="canvas" width="1000" height="700"></canvas>
+    </div>
+
+    <div class="container">
+        <h2>(x1; y1) - ліве верхня вершина</h2>
+        <h2>(x2; y2) - права нижня вершина</h2><br><br>
+        <label for="x1">X1:</label>
+        <input type="number" id="x1"> 
+        <label for="y1">Y1:</label>
+        <input type="number" id="y1"> <br><br>
+        
+        <label for="x2">X2:</label>
+        <input type="number" id="x2"> 
+        <label for="y2">Y2:</label>
+        <input type="number" id="y2"> <br><br>
+        
+        <button id="drawRectButton" onclick="funcDrawButton()">Draw Rectangle</button> <br><br>
+        
+        <div class="diagonal">
+          <div>
+            <button id="drawDiagonalButton">Draw Diagonal</button> <br><br>
+          </div>
+          <div>
+            <label for="color">Color:</label>
+            <input type="color" id="color"> <br><br>
+          </div>
+        </div>
+        
+        
+        <button id="randomTrianglesButton">Randomize Triangles</button> <br><br>
+        
+        <button id="drawCircleButton">Draw Circumcircle</button> <br><br>
+      </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
