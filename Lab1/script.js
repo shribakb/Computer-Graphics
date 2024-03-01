@@ -1,8 +1,8 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-canvas.width = 1000;
-canvas.height = 800;
+canvas.width = 700;
+canvas.height = 700;
 
 const width = canvas.width;
 const height = canvas.height;
@@ -19,7 +19,7 @@ ctx.stroke();
 
 ctx.fillText(0, width / 2 - 10, height / 2 + 10);
 
-const step = 40; 
+const step = 20; 
 for (let i = -width / 2; i < width / 2; i += step) {
 
 
@@ -35,7 +35,7 @@ for (let i = -width / 2; i < width / 2; i += step) {
   ctx.strokeStyle = 'black';
   ctx.stroke();
 
-  if (i % 20 === 0) { 
+  if (i % 50 === 0) { 
     ctx.fillStyle = '#000';
     ctx.font = '10px Arial';
     ctx.fillText(i.toString(), width / 2 + i - 5, height / 2 + 15);
@@ -53,15 +53,15 @@ function funcDrawLine(x1, y1, x2, y2) {
 ctx.font = '20px Arial'; 
 ctx.fillStyle = 'rgb(97, 97, 97)'; 
 
-funcDrawLine(500, 0, 490, 15);
-funcDrawLine(500, 0, 510, 15);
+funcDrawLine(350, 0, 340, 15);
+funcDrawLine(350, 0, 360, 15);
 
-ctx.fillText("y", 520, 15);
+ctx.fillText("y", 370, 15);
 
-funcDrawLine(1000, 400, 990, 390);
-funcDrawLine(1000, 400, 990, 410);
+funcDrawLine(700, 350, 690, 340);
+funcDrawLine(700, 350, 690, 360);
 
-ctx.fillText("x", 985, 425);
+ctx.fillText("x", 685, 375);
 
 
 
